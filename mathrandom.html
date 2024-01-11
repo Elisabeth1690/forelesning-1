@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>funker disse git-greiene? eller er det bare tull?</title>
+  </head>
+  <body>
+    <h1>heihei</h1>
+    <input type="button" value="vis et tall" class="btn" />
+    <p id="txt"></p>
+
+    <script>
+      //const randomDesimalNumber = Math.random() * 10;
+
+      const heibtn = document.querySelector(".btn");// . for id
+      const heitxt = document.querySelector("#txt"); //# for class
+
+      heibtn.onclick = showRandomNUmber;
+
+      function showRandomNUmber() {
+        heitxt.innerHTML = generateRandomNumber();
+      }
+
+      function generateRandomNumber() {
+        let randomNumber = Math.floor(Math.random() * 20) + 1; //hvis ikke +1 startere tallet på null
+        return randomNumber;
+      }
+
+      //console.log(randomNumber)
+    </script>
+  </body>
+</html>
